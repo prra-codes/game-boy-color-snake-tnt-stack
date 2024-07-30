@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BsFillTriangleFill } from "react-icons/bs";
+import SnakeGrid from "../components/SnakeGrid";
 
 export default function Home() {
   return (
@@ -63,8 +64,8 @@ top-[2px]"
             </div>
           </div>
 
-          <div className="border-solid bg-game-boy-screen-dark  absolute top-8 w-56 h-48 left-1/2 -translate-x-1/2 ">
-            {/* put snake game here */}
+          <div className="border-solid bg-game-boy-screen-dark  absolute top-8 w-[216px] h-48 left-1/2 -translate-x-1/2 ">
+            <SnakeGrid />
           </div>
           {/* game boy color text */}
           <div className="absolute top-[240px] left-12">
