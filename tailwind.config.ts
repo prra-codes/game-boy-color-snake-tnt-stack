@@ -20,6 +20,8 @@ const config: Config = {
         "circle-d-pad-dark": "rgba(50, 50, 50, 0.9)",
         "dark-blue-circle": "rgba(0, 97, 129, 1)",
         "smaller-light": "rgba(255, 137, 71, 1)",
+        "snake-background": "#9CBA5B",
+        "snake-body": "#3A543D",
       },
       borderRadius: {
         "game-boy-screen-bottom": "50px 40px",
