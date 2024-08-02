@@ -19,6 +19,7 @@ const config: Config = {
         "circle-d-pad-bright": "rgba(210, 210, 210, 0.3)",
         "circle-d-pad-dark": "rgba(50, 50, 50, 0.9)",
         "dark-blue-circle": "rgba(0, 97, 129, 1)",
+        "link-color": "#00ffff",
         "smaller-light": "rgba(255, 137, 71, 1)",
         "snake-background": "#9CBA5B",
         "snake-body": "#3A543D",
