@@ -25,12 +25,6 @@ export default function SnakeGrid() {
     document.addEventListener("keydown", updateDirection);
   });
 
-  function handleSetScore() {
-    if (score > Number(localStorage.getItem("snakeScore"))) {
-      localStorage.setItem("snakeScore", JSON.stringify(score));
-    }
-  }
-
   function renderBoard() {
     let cellArray = [];
 
@@ -71,7 +65,6 @@ export default function SnakeGrid() {
   }
 
   function gameOver() {
-    handleSetScore(); // handleSetScore() sets High Score
     setSnake(initialSnakePosition);
     setScore(0);
     renderFood();
@@ -157,9 +150,7 @@ export default function SnakeGrid() {
       <div className="text-white absolute top-[-5rem] left-[-5rem] font-bold text-xl">
         Score : <span className="">{score}</span>
       </div>
-      <div className="text-white absolute top-[-5rem] right-[-5rem] font-bold text-xl">
-        High Score : <span>{localStorage.getItem("snakeScore")}</span>
-      </div>
+
       {/* board div */}
       <div className="grid grid-rows-12 grid-cols-12 gap-x-[1px] gap-y-[1px]">
         {renderBoard()}
