@@ -152,9 +152,6 @@ export default function SnakeGrid() {
     setFood({ x: xPosition, y: yPosition }); // sets random food position on the grid using random x and y positions
   }
 
-  // const [score, setScore] = useState(0); then I can do something like <h2>High Score: {localStorage.getItem("snakeScore")}
-  // [gameOver, setGameOver] = useState(false), then in main code I can do  {gameOver && <div className="gameOver">Game Over</div>}
-
   return (
     <div>
       <div className="text-white absolute top-[-5rem] left-[-5rem] font-bold text-xl">
