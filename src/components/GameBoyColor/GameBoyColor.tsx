@@ -13,7 +13,7 @@ const GameBoyColor = () => {
     <div
       className="w-96 
 bg-game-boy-blue
-absolute top-1/2 left-[35%] -translate-x-1/2 -translate-y-1/2 h-[600px] rounded-t-md shadow-[inset_5px_5px_8px_0px_rgba(255,255,255,.4),3px_3px_8px_0px_rgba(255,255,255,.4)] rounded-b-game-boy-screen-bottom"
+absolute top-1/2 left-[45%] -translate-x-1/2 -translate-y-1/2 h-[600px] rounded-t-md shadow-[inset_5px_5px_8px_0px_rgba(255,255,255,.4),3px_3px_8px_0px_rgba(255,255,255,.4)] rounded-b-game-boy-screen-bottom"
     >
       <CommText />
       <LighterGameBoyColorShade />
