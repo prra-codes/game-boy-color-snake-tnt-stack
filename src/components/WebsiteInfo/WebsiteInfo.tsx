@@ -2,7 +2,7 @@ import React from "react";
 
 const WebsiteInfo = () => {
   return (
-    <div className="w-[18%] absolute right-[4%] top-[25%] text-white text-right ">
+    <div className="w-[18%] max-md:w-[70%]  absolute right-[4%] top-[25%] max-md:top-[80%] text-white max-md:right-[16%] md:text-right text-center">
       <div className="text-lg">
         <p>
           <span className="underline">
