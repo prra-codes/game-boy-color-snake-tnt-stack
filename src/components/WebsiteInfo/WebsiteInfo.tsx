@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const WebsiteInfo = () => {
   return (
@@ -17,20 +17,6 @@ const WebsiteInfo = () => {
             </span>
           </p>
         </div>
-
-        <div className="md:text-lg text-[14px] md:mt-4 max-md:hidden">
-          <p>
-            <span className="underline">
-              <a
-                href="https://www.prra.codes/"
-                target="_blank"
-                className="text-link-color"
-              >
-                Click here to check out my Connect 4 game.
-              </a>
-            </span>
-          </p>
-        </div>
       </div>
       <div>
         <ul className="md:mt-4">
@@ -39,7 +25,7 @@ const WebsiteInfo = () => {
               href="mailto:prra@prra.codes"
               className="underline text-link-color md:text-lg text-[14px]"
             >
-              {" "}
+              {' '}
               prra@prra.codes
             </a>
           </li>
@@ -50,15 +36,6 @@ const WebsiteInfo = () => {
               target="_blank"
             >
               Github
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/peter-arthur/"
-              className="underline text-link-color md:text-lg text-[14px]"
-              target="_blank"
-            >
-              LinkedIn
             </a>
           </li>
         </ul>
