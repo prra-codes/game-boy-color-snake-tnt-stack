@@ -1,5 +1,5 @@
-"use client";
-import { useState, useEffect } from "react";
+'use client';
+import { useState, useEffect } from 'react';
 
 export default function SnakeGrid() {
   let totalRows = 12;
@@ -13,7 +13,7 @@ export default function SnakeGrid() {
   const [food, setFood] = useState({ x: 3, y: 3 });
   const [snake, setSnake] = useState(initialSnakePosition);
 
-  const [direction, setDirection] = useState("LEFT");
+  const [direction, setDirection] = useState('LEFT');
   const [score, setScore] = useState(0);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function SnakeGrid() {
   });
 
   useEffect(() => {
-    document.addEventListener("keydown", updateDirection);
+    document.addEventListener('keydown', updateDirection);
   });
 
   function renderBoard() {
@@ -36,18 +36,18 @@ export default function SnakeGrid() {
 
         let isSnakeHead = snake[0].x === row && snake[0].y === col; // the head of the snake is the first item in the array
 
-        let cellColour = "bg-game-boy-screen-dark";
+        let cellColour = 'bg-game-boy-screen-dark';
 
         if (isFood) {
-          cellColour = "bg-red-600";
+          cellColour = 'bg-red-600';
         }
 
         if (isSnake) {
-          cellColour = "bg-white";
+          cellColour = 'bg-white';
         }
 
         if (isSnakeHead) {
-          cellColour = "bg-white";
+          cellColour = 'bg-white';
         }
 
         let cell = (
@@ -93,16 +93,16 @@ export default function SnakeGrid() {
     let newSnake = [...snake]; // cloning snake
 
     switch (direction) {
-      case "LEFT":
+      case 'LEFT':
         newSnake.unshift({ x: newSnake[0].x, y: newSnake[0].y - 1 });
         break;
-      case "RIGHT":
+      case 'RIGHT':
         newSnake.unshift({ x: newSnake[0].x, y: newSnake[0].y + 1 });
         break;
-      case "UP":
+      case 'UP':
         newSnake.unshift({ x: newSnake[0].x - 1, y: newSnake[0].y });
         break;
-      case "DOWN":
+      case 'DOWN':
         newSnake.unshift({ x: newSnake[0].x + 1, y: newSnake[0].y });
         break;
     }
@@ -123,17 +123,17 @@ export default function SnakeGrid() {
     let code = e.code;
 
     switch (code) {
-      case "ArrowUp":
-        setDirection("UP");
+      case 'ArrowUp':
+        setDirection('UP');
         break;
-      case "ArrowDown":
-        setDirection("DOWN");
+      case 'ArrowDown':
+        setDirection('DOWN');
         break;
-      case "ArrowLeft":
-        setDirection("LEFT");
+      case 'ArrowLeft':
+        setDirection('LEFT');
         break;
-      case "ArrowRight":
-        setDirection("RIGHT");
+      case 'ArrowRight':
+        setDirection('RIGHT');
         break;
     }
   }
