@@ -12,9 +12,9 @@ const WebsiteInfo = () => {
         </div>
         <div className="md:text-lg text-[14px] md:mt-4">
           <p>
-            {' '}
-            Control the snake's movements using the arrow keys (Up, Down, Left,
-            and Right) on the keyboard to navigate in any chosen direction.
+            Control the movements of the snake by using the arrow keys (Up,
+            Down, Left, and Right) on the keyboard to navigate in any chosen
+            direction.
           </p>
         </div>
         <div className="md:text-lg text-[14px]">
@@ -38,7 +38,6 @@ const WebsiteInfo = () => {
               href="mailto:prra@prra.codes"
               className="underline text-link-color md:text-lg text-[14px]"
             >
-              {' '}
               prra@prra.codes
             </a>
           </li>
