@@ -2,11 +2,24 @@ import React from 'react';
 
 const WebsiteInfo = () => {
   return (
-    <div className="w-[18%] max-md:w-[52%]  absolute right-[4%] top-[25%] max-md:top-[89%] text-white max-md:right-[25%] md:text-right text-center max-md:flex max-md:justify-between">
+    <div className="w-[18%] max-md:w-[52%]  absolute right-[4%] top-[25%] max-md:top-[89%] text-white max-md:right-[25%] md:text-left max-md:flex max-md:justify-between">
       <div className=" max-md:w-[50%]">
         <div className="md:text-lg text-[14px]">
           <p>
-            <span className="underline">
+            This project is built using Next.js, TypeScript and Tailwind. It is
+            a Game Boy Color emulator featuring the classic Snake game.
+          </p>
+        </div>
+        <div className="md:text-lg text-[14px] md:mt-4">
+          <p>
+            {' '}
+            Control the snake's movements using the arrow keys (Up, Down, Left,
+            and Right) on the keyboard to navigate in any chosen direction.
+          </p>
+        </div>
+        <div className="md:text-lg text-[14px]">
+          <p>
+            <span className="underline md:mt-4">
               <a
                 href="https://github.com/prra-codes/game-boy-color-snake-tnt-stack"
                 target="_blank"
